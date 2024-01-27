@@ -51,11 +51,18 @@
 
 img {
   position: absolute; /* Position the image absolutely */
-  bottom: 100%; /* Move the image all the way up */
+  bottom: 50%; /* Move the image to the center vertically */
   left: 50%; /* Center the image horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
+  transform: translate(-50%, -50%); /* Adjust for centering */
 }
 
 .parent-container {
-  position: relative; /* Set the position of the parent container to relative */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  height: 100%; /* Take full height of parent (.garamond) */
 }
+
+/* SearchPage.js */
+/* (No changes needed) */

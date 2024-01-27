@@ -1,6 +1,5 @@
 import React from 'react';
 import SearchPage from './components/SearchPage';
-import initialDetails from './data/initialDetails';
 
 function App() {
   return (

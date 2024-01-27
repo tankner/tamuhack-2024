@@ -24,14 +24,17 @@ function SearchPage() {
           onSearchEngineChange={handleSearchEngineChange}
         />
       </div>
-      <img src={getLogoPath(searchEngine)} alt={`${searchEngine} Logo`}/>
-      <div className="pa2">
-        <input
-          className="pa3 bb br3 grow b--none bg-lightest-blue ma3"
-          type="search"
-          placeholder="Search"
-        />
+      <div class="parent-container">
+        <img src={getLogoPath(searchEngine)} alt={`${searchEngine} Logo`}/>
+        <div className="pa2">
+          <input
+            className="pa3 bb br3 grow b--none bg-lightest-blue ma3"
+            type="search"
+            placeholder="Search"
+          />
+        </div>
       </div>
+      
     </section>
   );
 }
