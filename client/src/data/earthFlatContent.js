@@ -3,7 +3,8 @@ export const c1 = [
     {
         "title": "How Do We Know the Earth Is Round?",
         "snippet": "By watching as the Earth also rotates from that view, you can see that the Earth is a rotating sphere and is not flat. Image by NASA. Like the other planets, ...",
-        "url": "https://askanearthspacescientist.asu.edu/top-question/flat-earth"
+        "url": "https://askanearthspacescientist.asu.edu/top-question/flat-earth",
+        "credibility": "94"
     },
     {
         "title": "Flat Earthers: What They Believe and Why",
@@ -56,6 +57,7 @@ export const c2 = [
     }
 ]
 
+export const h3 = "Other results"
 export const e1 = [
     {
         "title": "The flat-Earth conspiracy is spreading around the globe. ...",
