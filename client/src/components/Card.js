@@ -17,10 +17,10 @@ const Card = ({ title, content }) => {
     
   return (
     <Accordion>
-        <AccordionSummary id="panel-header" aria-controls="panel-content">
+        <AccordionSummary id="panel-header" aria-controls="panel-content" style={{ fontFamily: 'Roboto, sans-serif' }}>
             {title}
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails style={{ fontFamily: 'Roboto, sans-serif' }}>
             {searchResults}
         </AccordionDetails>
     </Accordion>

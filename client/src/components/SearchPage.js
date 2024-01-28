@@ -98,6 +98,7 @@ const SearchInput = styled.input`
   -webkit-tap-highlight-color: transparent;
   height: 34px;
   font-size: 16px;
+  font-family: Arial;
 `;
 
 const EngineIcon = styled.div`
