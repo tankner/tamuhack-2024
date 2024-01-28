@@ -18,6 +18,11 @@ const LogoSection = styled.div`
     width: 400px;
     height: 92px;
     margin-top: auto;
+    transition: 0.5s;
+  }
+  img:hover {
+    scale: 1.1;
+    transition: 0.5s;
   }
 `;
 
@@ -107,6 +112,7 @@ cursor: pointer;
 align-items: center;
 border: 0;
 
+
 `;
 
 const SuggestionsList = styled.ul`
@@ -121,7 +127,7 @@ const SuggestionsList = styled.ul`
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
-  top: 41%;
+  top: 54%;
   border-radius: 0 0 0.6em 0.6em;
 `;
 
