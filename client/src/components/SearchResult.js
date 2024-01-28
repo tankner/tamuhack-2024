@@ -49,7 +49,7 @@ function SearchResult() {
             <Card title={h11} content={c11}/>
             <Card title={h22} content={c22}/>
             <Card title={h33} content={c33}/>
-            {searchResults}
+            <Card title={h3} content={e2}/>
             </>
         )
     }

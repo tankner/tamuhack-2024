@@ -38,7 +38,7 @@ export const c11 = [
     },
 ]
 
-export const h22 = "Hamas (34 Articles)"
+export const h22 = "Israel is taking appropriate military action towards a terrorist group (34 Articles)"
 export const c22 =  [
      {
         "title": "Gaza war: a better understanding of the violence on both ...",
@@ -73,7 +73,7 @@ export const c22 =  [
 ]
 
 
-export const h33 = "Israel (13 Articles)"
+export const h33 = "Israel is unjustly oppressing Palestinians through   (13 Articles)"
 export const c33 = [
     {
         "title": "Gaza: Why the War Won’t End",
