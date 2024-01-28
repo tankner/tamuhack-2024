@@ -6,6 +6,7 @@ import { useSearchParams } from 'react-router-dom';
 const GoogleSearchHeader = () => {
   const [searchParams] = useSearchParams();
   const searchEngine = searchParams.get('search-engine'); // Extract "search-engine" parameter
+  const searchQuery = searchParams.get('search-term');
 
   return (
     <>
@@ -26,7 +27,7 @@ const GoogleSearchHeader = () => {
             </a>
           </span>
           <span className="search">
-            <input type="text" name="srch_fld" />
+            <input type="text" name="srch_fld" value={searchQuery} />
             <img src={`${searchEngine}logo2.png`} alt="Google" width="20" height="20"/>
           </span>
         </div>
