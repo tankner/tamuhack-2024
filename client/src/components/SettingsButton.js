@@ -3,6 +3,11 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Slider from '@mui/material/Slider';
+import FormLabel from '@mui/material/FormLabel';
+import FormControl from '@mui/material/FormControl';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import RadioGroup from '@mui/material/RadioGroup';
+import Radio from '@mui/material/Radio';
 
 function SettingsButton({ searchEngine, onSearchEngineChange }) {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -44,6 +49,17 @@ function SettingsButton({ searchEngine, onSearchEngineChange }) {
           <MenuItem>
             <div>
               <p>   Select Search Engine   </p>
+              <FormControl>
+                <RadioGroup
+                  row
+                  aria-labelledby="demo-row-radio-buttons-group-label"
+                  name="row-radio-buttons-group"
+                >
+                  <FormControlLabel value="h" control={<Radio />} label="Google" onChange={handleSliderChange}/>
+                  <FormControlLabel value="Bing" control={<Radio />} label="Bing" onChange={handleSliderChange}/>
+                  <FormControlLabel value="Yahoo" control={<Radio />} label="Yahoo" onChange={handleSliderChange}/>
+                </RadioGroup>
+              </FormControl>
               <Slider
                 value={['Google', 'Bing', 'Yahoo'].indexOf(searchEngine)}
                 onChange={handleSliderChange}
