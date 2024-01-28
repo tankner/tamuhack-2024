@@ -3,6 +3,8 @@ import Card from './Card';
 import SearchResultItem from './SearchResultItem';
 import {h1, c1, h2, c2, e1} from "../data/earthFlatContent";
 import {h11, c11, h22, c22, e2} from "../data/israelContent";
+import GoogleSearchHeader from './GoogleSearchHeader';
+import './style.css'
 
 function SearchResult({query}) {
 
@@ -18,6 +20,7 @@ function SearchResult({query}) {
           ));
         return (
             <>
+            <GoogleSearchHeader/>
             <Card title={h1} content={c1}/>
             <Card title={h2} content={c2}/>
             {searchResults}
@@ -35,6 +38,7 @@ function SearchResult({query}) {
           ));
         return (
             <>
+            <GoogleSearchHeader/>
             <Card title={h1} content={c1}/>
             <Card title={h2} content={c2}/>
             {searchResults}

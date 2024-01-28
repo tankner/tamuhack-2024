@@ -1,0 +1,201 @@
+.head {
+    position:relative;
+    top:0px;
+    left: 0px;
+    width: 100%; min-width:1000px;
+    height: 50px;
+  }
+  
+  .logo{
+    position:relative;
+    top:25px;
+    padding: 25px 30px 0px 30px;
+  }
+  
+  .search { 
+    width:630px; height:46px;
+    position:absolute;
+    padding-left:20px;
+    top:13px;
+    border:solid #ebebeb 1px;
+    border-radius:23px;
+    display:inline-block;
+  }
+  
+  .search:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+      border-color: rgba(223,225,229,0);
+  }
+  
+  input[name="srch_fld"] {
+    padding-top:5px;
+    font-size: 16px;
+    font-weight:100;
+    line-height:34px;
+    width:522px;
+    height:34px;
+    border:none;
+    background-color:transparent;
+    font-family: arial;
+  }
+  
+  input[name="srch_fld"]:focus {
+    outline:none;
+  }
+  
+  .search #mic {
+    padding-top:10px;
+    width:24px;
+    padding-left:18px;
+  }
+  
+  .search #mag {
+    width:24px;
+    padding-left:13px;
+    padding-bottom:1px;
+  }
+  
+  .options {
+    position:relative;
+    top:0px;
+    left: 0px;
+    width: 100%; min-width:980px;
+    height: 50px;
+    border-bottom: solid #ebebeb 1px;
+    
+  }
+  
+  .settings {
+    float:right;
+  }
+  
+  .settings li{
+    position:relative;
+    display:inline-block;
+    padding-left:12px;
+  }
+  
+  #apps {
+    width:30px;
+  }
+  
+  #notifs {
+    width:18px;
+    padding-bottom:5px;
+  }
+  
+  #acct {
+    width:30px;
+  }
+  
+  .options {
+    
+  }
+  
+  .options li{
+    text-decoration:none;
+    padding: 19px 10px 12px 10px;
+    
+    font-family:arial;
+    display:inline-block;
+  }
+  
+  .options li:focus {
+    border-bottom:;
+  }
+  
+  .options li a {
+    color:#777;
+    text-decoration:none;
+  }
+  
+  .options input[type="button"]{
+    color:#777;
+    font-size:9pt;
+    background-color:transparent;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    padding-bottom:12px;
+  }
+  
+  input[type="button"]:hover {
+    color:black;
+  }
+  
+  input[type="button"]:focus {
+    color:#1A73E8;
+  /*  font-weight:bold; */
+    text-shadow: 0.5px 0px 0px #1A73E8; 
+    border-bottom: solid #1A73E8 2px;
+    
+  }
+  
+  .right_opts {
+    padding-left:170px;
+  }
+  
+  .right_opts input[name="tools"] {
+    padding: 6px 14px;
+  }
+  
+  .right_opts input[name="tools"]:hover {
+  background-color: #f8f8f8;
+    outline:solid #c6c6c6 1px;
+    border-radius:2px;
+    color:#777;
+    /*box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);*/
+  }
+  
+  .right_opts input[name="tools"]:focus {
+    border:none;
+    text-shadow:none;
+    color:#777;
+  }
+  
+  /* Dropdown Button */
+  .dropbtn {
+      background-color: transparent;
+      color: #777;
+      padding: 0px 0px 0px 0px;
+      font-family:arial;
+      font-size: 9pt;
+      border: none;
+      cursor:pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+      position: ;
+      display: ;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+      color:black;
+      padding:5px 0px;
+      display: none;
+      position: absolute;
+      background-color:white;
+      min-width: /*160px*/;
+      box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      color: black;
+      font-size:8pt;
+      padding: 5px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color:#ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {color:black;}
