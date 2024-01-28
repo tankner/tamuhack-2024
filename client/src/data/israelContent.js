@@ -51,14 +51,14 @@ export const c22 =  [
         "url": "https://www.uva.nl/en/shared-content/faculteiten/en/faculteit-der-rechtsgeleerdheid/news/2023/10/questions-about-the-armed-conflict-between-israel-and-hamas.html"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Opinion | Hamas and the problem of 'evil'",
+        "snippet": "Oct 31, 2023 — One is to say that something is inherently wrong with Palestinians — a view often expressed by both the Israeli and American right — or even ...",
+        "url": "https://www.washingtonpost.com/opinions/2023/10/31/hamas-gaza-nonviolence-israel-war-united-states-terrorism/"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Everything I thought I knew about Israel and Gaza was wrong",
+        "snippet": "Oct 9, 2023 — About everything except the brutality of Hamas. The horrific acts of terror these militants filmed themselves carrying out are every bit as bad ...",
+        "url": "https://forward.com/opinion/563822/israel-gaza-war-what-we-thought-was-wrong/"
     },
     {
         "title": "",
@@ -101,19 +101,24 @@ export const c33 = [
         "url": "https://news.stanford.edu/report/2023/12/05/palestinians-views-oct-7/"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Opinion | The Israel-Hamas War Was Not Inevitable",
+        "snippet": "Dec 29, 2023 — The Israel-Hamas war was not as inevitable as you might think ... bad seasons in this business, which are defined by the big choices ...",
+        "url": "https://www.nytimes.com/2023/12/29/opinion/israel-hamas-war.html"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Israel-Gaza war: Can Hamas actually be eliminated? ...",
+        "snippet": "Dec 12, 2023 — Best Mortgages for Bad Credit · Best Hardship Loans · How to Boost Your ... To 'eliminate' or destroy Hamas, Israel will have to destroy the ...",
+        "url": "https://www.cnbc.com/2023/12/12/israel-gaza-war-can-hamas-actually-be-eliminated-experts-weigh-in.html"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Is Hamas Evil? Reflections In the Wake of the 10/7 Carnage",
+        "snippet": "President Biden proclaimed that Hamas is “pure evil.” He is wrong. Like pure righteousness, or omnibenevolence, “pure evil”—the uppercase Evil— is a ...",
+        "url": "https://www.international.ucla.edu/israel/currents/article/272993"
+    }, 
+    {
+        "title": "UK politicians have got it wrong on the Israel-Hamas war. ...",
+        "snippet": "Oct 18, 2023 — ... Israel-Gaza war. This article is more than 3 months old. UK politicians have got it wrong on the Israel-Hamas war. We must hold them to ...",
+        "url": "https://www.theguardian.com/global/commentisfree/2023/oct/18/uk-politicians-israel-hamas-war-tory-labour-israeli-crimes"
     }, 
 ]
 
@@ -134,9 +139,9 @@ export const e2 = [
         "url": "https://www.vox.com/technology/2023/10/12/23913472/misinformation-israel-hamas-war-social-media-literacy-palestine"
     }, 
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Why BBC doesn't call Hamas militants 'terrorists'",
+        "snippet": "Oct 11, 2023 — ... bad guys. We regularly point out that the British and other ... From Israel: Community frozen as Hamas atrocities emerge; From Gaza: BBC ...",
+        "url": "https://www.bbc.com/news/world-middle-east-67083432"
     }, 
     {
         "title": "",
