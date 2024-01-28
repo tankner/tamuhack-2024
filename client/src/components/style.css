@@ -13,8 +13,9 @@
   }
   
   .search { 
-    width:630px; height:46px;
+    width:575px; height:40px;
     position:absolute;
+    padding-top: 10px;
     padding-left:20px;
     top:13px;
     border:solid #ebebeb 1px;

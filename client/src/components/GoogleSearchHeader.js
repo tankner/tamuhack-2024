@@ -27,7 +27,7 @@ const GoogleSearchHeader = () => {
           </span>
           <span className="search">
             <input type="text" name="srch_fld" />
-            <img src={`${searchEngine}logo2.png`} alt="Google" width="25"/>
+            <img src={`${searchEngine}logo2.png`} alt="Google" width="25" height="25"/>
           </span>
         </div>
         <div className="options">
