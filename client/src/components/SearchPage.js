@@ -146,7 +146,7 @@ const SearchPage = () => {
             </SearchIcon>
             <SearchInput type='text'>
               onKeyDown={(e) => {
-                if (e.key === 'Enter') window.location.href = url;
+                if (e.key === 'Enter') window.location.href = `https://www.${searchEngine.toLowerCase()}.com/search?q=${searchTerm.current.value}`;
               }}
             </SearchInput> 
             <EngineIcon>
