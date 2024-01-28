@@ -32,9 +32,9 @@ export const c11 = [
         "url": "https://www.beyondintractability.org/newsletter-165"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Shockwaves From the Israel-Hamas War Threaten Global ...",
+        "snippet": "Oct 18, 2023 — Since 2007, Hamas has governed the Gaza Strip, where health outcomes have long been poor. Those outcomes arose from how Hamas pursued an ...",
+        "url": "https://www.thinkglobalhealth.org/article/shockwaves-israel-hamas-war-threaten-global-health"
     },
 ]
 
@@ -61,19 +61,14 @@ export const c22 =  [
         "url": "https://forward.com/opinion/563822/israel-gaza-war-what-we-thought-was-wrong/"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Opinion | The Israel-Hamas War Was Not Inevitable",
+        "snippet": "Dec 29, 2023 — The Israel-Hamas war was not as inevitable as you might think ... bad seasons in this business, which are defined by the big choices ...",
+        "url": "https://www.nytimes.com/2023/12/29/opinion/israel-hamas-war.html"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
-    },
-    {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Is Hamas Evil? Reflections In the Wake of the 10/7 Carnage",
+        "snippet": "President Biden proclaimed that Hamas is “pure evil.” He is wrong. Like pure righteousness, or omnibenevolence, “pure evil”—the uppercase Evil— is a ...",
+        "url": "https://www.international.ucla.edu/israel/currents/article/272993"
     },
 ]
 
@@ -144,23 +139,19 @@ export const e2 = [
         "url": "https://www.bbc.com/news/world-middle-east-67083432"
     }, 
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "After Hamas, Then What? Israel's Undefined Endgame in ...",
+        "snippet": "Oct 20, 2023 — Unfortunately, few see hope for a positive outcome from a sustained victory by Israel over Hamas. “We don't have better and bad scenarios, or ...",
+        "url": "https://time.com/6326777/after-hamas-then-what-israels-endgame-in-gaza/"
     }, 
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "The Global Consequences of the Israel-Hamas War",
+        "snippet": "Nov 3, 2023 — ... bad news. Moreover, if the Israel-Hamas war escalates, with Iran entering the fray, the impact on oil prices could make it more expensive ...",
+        "url": "https://www.project-syndicate.org/commentary/israel-hamas-war-global-implications-by-mark-leonard-2023-11"
     }, 
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "The global consequences of the Israel–Hamas war",
+        "snippet": "Nov 7, 2023 — ... bad news. Moreover, if the Israel–Hamas war escalates, with Iran entering the fray, the impact on oil prices could make it more expensive ...",
+        "url": "https://www.aspistrategist.org.au/the-global-consequences-of-the-israel-hamas-war/"
     }, 
-    {
-        "title": "",
-        "snippet": "",
-        "url": ""
-    }, 
+
 ]

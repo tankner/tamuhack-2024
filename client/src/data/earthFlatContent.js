@@ -1,4 +1,4 @@
-export const h1 = "No, the Earth is roughly a sphere. (98%)"
+export const h1 = "No, the Earth is roughly a sphere. (98 Articles Found)"
 export const c1 = [
     {
         "title": "How Do We Know the Earth Is Round?",
@@ -42,7 +42,7 @@ export const c1 = [
     },
 ]
 
-export const h2 = "Yes, the earth is either circular or square-shaped. (2%)"
+export const h2 = "Yes, the earth is either circular or square-shaped. (2 Articles Found)"
 export const c2 = [
     {
         "title": "Truth unboxed: the Earth is flat! - The Strand",
@@ -63,28 +63,33 @@ export const e1 = [
         "url": "https://www.cnn.com/2019/11/16/us/flat-earth-conference-conspiracy-theories-scli-intl/index.html"
     }, 
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Conspiracy vs. Science: A Survey of U.S. Public Beliefs",
+        "snippet": "Apr 25, 2022 — On a nationwide U.S. survey, around 10 percent of respondents agreed with conspiracy claims that the Earth is flat, NASA faked the Moon ...",
+        "url": "https://carsey.unh.edu/publication/conspiracy-vs-science-a-survey-of-us-public-beliefs"
     }, 
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Flat Earthers Spend Rs 16 Lakh On Experiment That ...",
+        "snippet": "Flat Earthers Spend Rs 16 Lakh On Experiment That Accidentally Proves 'Earth Is Round'| Shorts The flat-earth and round-earth debate is a ...",
+        "url": "https://www.youtube.com/watch?v=viZcVYmxWNI"
     }, 
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Shaquille O'Neal says he was just joking with flat-Earth ...",
+        "snippet": "Mar 23, 2017 — Shaquille O'Neal confirmed Thursday what many had suspected: The Earth is, in fact, round. Oh, wait, everyone (well, almost) knew that ...",
+        "url": "https://www.washingtonpost.com/news/early-lead/wp/2017/03/23/shaquille-oneal-says-he-was-just-joking-with-flat-earth-comments/"
     }, 
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Flat Earth",
+        "snippet": "Flat Earth. 5527 likes. Flat Earth is an Helsinki-based alternative rock band known for their dynamic sound and electrifying performances. With a...",
+        "url": "https://www.facebook.com/OfficialFlatEarth.band/"
     }, 
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Flat Earth Theatre - Home",
+        "snippet": "Erin Lerch on Pinch Point, Playwriting, and... Penguins? Playwright Erin Lerch took a break from exploring Antarctica and befriending penguins to talk about ...",
+        "url": "https://www.flatearththeatre.com/"
+    },     
+    {
+        "title": "The Flat Earth Society",
+        "snippet": "Welcome to The Flat Earth Society, home of the flat earth forums and the largest library of Flat Earth Society journals, newsletters, interviews, and books.",
+        "url": "https://theflatearthsociety.org/home/"
     }, 
 ]

@@ -100,9 +100,9 @@
     display:inline-block;
   }
   
-  .options li:focus {
+  /* .options li:focus {
     border-bottom:;
-  }
+  } */
   
   .options li a {
     color:#777;
@@ -165,10 +165,10 @@
   }
   
   /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+  /* .dropdown {
       position: ;
       display: ;
-  }
+  } */
   
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
@@ -177,7 +177,7 @@
       display: none;
       position: absolute;
       background-color:white;
-      min-width: /*160px*/;
+      /* min-width: 160px; */
       box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.2);
       z-index: 1;
   }

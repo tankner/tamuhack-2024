@@ -24,7 +24,7 @@ function SettingsButton({ searchEngine, onSearchEngineChange }) {
       // Convert slider value to corresponding search engine
       const searchEngines = ['Google', 'Bing', 'Yahoo'];
       const newSearchEngine = searchEngines[newValue];
-      
+      console.log("New Value", newValue)
       // Update the parent component state using onSearchEngineChange
       onSearchEngineChange(newSearchEngine);
     };
@@ -54,10 +54,15 @@ function SettingsButton({ searchEngine, onSearchEngineChange }) {
                   row
                   aria-labelledby="demo-row-radio-buttons-group-label"
                   name="row-radio-buttons-group"
+                  onChange={(e) => {
+                    const selectedEngine = e.target.value;
+                    const newIndex = ['Google', 'Bing', 'Yahoo'].indexOf(selectedEngine);
+                    handleSliderChange(null, newIndex);
+                  }}                
                 >
-                  <FormControlLabel value="h" control={<Radio />} label="Google" onChange={handleSliderChange}/>
-                  <FormControlLabel value="Bing" control={<Radio />} label="Bing" onChange={handleSliderChange}/>
-                  <FormControlLabel value="Yahoo" control={<Radio />} label="Yahoo" onChange={handleSliderChange}/>
+                <FormControlLabel value="Google" control={<Radio />} label="Google" onChange={handleSliderChange}/>
+                <FormControlLabel value="Bing" control={<Radio />} label="Bing" onChange={handleSliderChange}/>
+                <FormControlLabel value="Yahoo" control={<Radio />} label="Yahoo" onChange={handleSliderChange}/>
                 </RadioGroup>
               </FormControl>
               <Slider

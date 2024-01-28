@@ -114,6 +114,7 @@ const SearchPage = () => {
 
   const [searchEngine, setSearchEngine] = useState('Google');
   const handleSearchEngineChange = (newSearchEngine) => {
+    console.log("New Search Engine: ", newSearchEngine);
     setSearchEngine(newSearchEngine);
   };
   let searchTerm = useRef();

@@ -1,6 +1,12 @@
 import React from 'react';
+import { useSearchParams } from 'react-router-dom';
+
+
 
 const GoogleSearchHeader = () => {
+  const [searchParams] = useSearchParams();
+  const searchEngine = searchParams.get('search-engine'); // Extract "search-engine" parameter
+
   return (
     <>
       <html lang="en">
@@ -15,24 +21,18 @@ const GoogleSearchHeader = () => {
         <div className="head">
           {/* logo, search, settings, options */}
           <span className="logo">
-            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="80px" alt="Google" />
+            <a href="/">
+            <img src="LUMOS.png" width="90px" alt="LUMOS"/>
+            </a>
           </span>
           <span className="search">
             <input type="text" name="srch_fld" />
-            <img id="mic" src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" alt="Microphone" />
-            <img id="mag" src="https://enterprises.unc.edu/files/2018/05/search-icon.png" alt="Magnifying Glass" />
-          </span>
-          <span className="settings">
-            <ul>
-              <li><a href="#"><img id="apps" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOAJlq1jPvJio0whyKaCG1Phlhe_8THBtUvZI4dEfiWjsTWl4x" alt="Apps" /></a></li>
-              <li><a href="#"><img id="notifs" src="https://image.flaticon.com/icons/svg/61/61073.svg" alt="Notifications" /></a></li>
-              <li><a href="#"><img id="acct" src="https://camo.githubusercontent.com/1e6798a976ebcf977b616713a1fb1b1ee53e8e13/68747470733a2f2f7261772e6769746875622e636f6d2f656c61646e6176612f6d6174657269616c2d6c65747465722d69636f6e732f6d61737465722f646973742f706e672f582e706e67" alt="Account" /></a></li>
-            </ul>
+            <img src={`${searchEngine}logo2.png`} alt="Google" width="25"/>
           </span>
         </div>
         <div className="options">
           {/* inline-block list for navtools */}
-          <ul>
+          {/* <ul>
             <span className="left_opts">
               <li><input type="button" name="all" value="All" /></li>
               <li><input type="button" name="news" value="News" /></li>
@@ -72,7 +72,7 @@ const GoogleSearchHeader = () => {
             </span>
           </ul>
           <ul>
-          </ul>
+          </ul> */}
         </div>
 
         <div className="results">
