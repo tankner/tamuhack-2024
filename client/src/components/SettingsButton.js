@@ -65,19 +65,6 @@ function SettingsButton({ searchEngine, onSearchEngineChange }) {
                 <FormControlLabel value="Yahoo" control={<Radio />} label="Yahoo" onChange={handleSliderChange}/>
                 </RadioGroup>
               </FormControl>
-              <Slider
-                value={['Google', 'Bing', 'Yahoo'].indexOf(searchEngine)}
-                onChange={handleSliderChange}
-                valueLabelDisplay="auto"
-                step={1}
-                marks={[
-                  { value: 0, label: 'Google' },
-                  { value: 1, label: 'Bing' },
-                  { value: 2, label: 'Yahoo' },
-                ]}
-                min={0}
-                max={2}
-              />
             </div>
           </MenuItem>
         </Menu>
