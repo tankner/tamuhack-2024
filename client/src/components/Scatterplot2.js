@@ -1,5 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
+import './style.css'
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
 
 const Scatterplot2 = () => {
   const svgRef = useRef();
@@ -73,6 +77,11 @@ const Scatterplot2 = () => {
   }, []); // Empty dependency array ensures useEffect runs only once
 
   return (
+    <Accordion defaultExpanded={true}>
+      <AccordionSummary id="panel-header" aria-controls="panel-content" style={{ fontFamily: 'Neue Haas Grotesk, sans-serif'} }>
+            Details
+      </AccordionSummary>
+    <AccordionDetails>
     <div style={{ padding: '20px' }}>
       <div style={{ marginBottom: '20px' }}>
       <div style={{ marginTop: '20px', fontFamily: 'Neue Haas Grotesk, sans-serif' }}>
@@ -93,6 +102,8 @@ const Scatterplot2 = () => {
         </p>
       </div>
     </div>
+    </AccordionDetails>
+    </Accordion>
   );
 };
 

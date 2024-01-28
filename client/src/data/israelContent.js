@@ -86,7 +86,7 @@ export const c22 =  [
 ]
 
 
-export const h33 = "Israel is unjustly oppressing Palestinians through   (13 Articles)"
+export const h33 = "Israel is unjustly oppressing Palestinians through its pursuit of Hamas (13 Articles)"
 export const c33 = [
     {
         "title": "Gaza: Why the War Won’t End",
