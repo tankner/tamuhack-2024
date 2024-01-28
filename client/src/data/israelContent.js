@@ -17,19 +17,19 @@ export const c11 = [
         "url": "https://time.com/6329962/israel-hamas-personal-relationships-strain-us/"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Analysis: How bad is the humanitarian crisis in Gaza amid ...",
+        "snippet": "Nov 19, 2023 — Analysis: How bad is the humanitarian crisis in Gaza amid the Israel-Hamas war? ... Israel and Hamas further exacerbates the dire humanitarian ...",
+        "url": "https://www.pbs.org/newshour/world/analysis-how-bad-is-the-humanitarian-crisis-in-gaza-amid-the-israel-hamas-war"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "In the Israel-Hamas conflict, understanding doesn't excuse ...",
+        "snippet": "Oct 18, 2023 — In war between Israel and Hamas, explaining evil doesn't excuse it ... Meanwhile, some allies of Israel insisted that it was wrong to think about ...",
+        "url": "https://www.inquirer.com/opinion/israel-palestine-protests-responsibility-20231018.html"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Israel, Hamas, Evil, and the Bad-faith Actor Problem",
+        "snippet": "Israel, Hamas, Evil, and the Bad-faith Actor Problem. Hyperpolarization Graphic. Newsletter 165 - October 16, 2023. From the Directors - Guy Burgess and ...",
+        "url": "https://www.beyondintractability.org/newsletter-165"
     },
     {
         "title": "",
@@ -96,9 +96,9 @@ export const c33 = [
         "url": "https://www.latimes.com/opinion/story/2023-10-09/israel-hamas-attacks-failure-security-surveillance-blame"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Survey sheds light on Palestinian views ahead of Hamas ...",
+        "snippet": "Dec 5, 2023 — When asked their view on U.S. and China policy in addressing the Arab-Israeli conflict, most Palestinians rated both as “bad,” but more ...",
+        "url": "https://news.stanford.edu/report/2023/12/05/palestinians-views-oct-7/"
     },
     {
         "title": "",
