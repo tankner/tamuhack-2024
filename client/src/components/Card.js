@@ -12,6 +12,7 @@ const Card = ({ title, content }) => {
           title={result.title}
           snippet={result.snippet}
           url={result.url}
+          credibility={result.credibility}
         />
       ));
     

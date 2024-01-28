@@ -1,12 +1,13 @@
 import React from 'react';
 
-const GoogleSearchResultItem = ({ title, snippet, url }) => {
+const GoogleSearchResultItem = ({ title, snippet, credibility, url }) => {
   return (
     <div style={styles.container}>
       <a href={url} target="_blank" rel="noopener noreferrer" style={styles.title}>
         {title}
       </a>
       <p style={styles.snippet}>{snippet}</p>
+      <div style={styles.credibility}>{credibility}</div>
       <a href={url} target="_blank" rel="noopener noreferrer" style={styles.url}>
         {url}
       </a>
@@ -38,6 +39,11 @@ const styles = {
     snippet: {
       fontSize: '14px',
       marginBottom: '5px',
+    },
+    credibility: {
+      fontSize: '14px',
+      marginTop: '5px',
+      marginRight: '8px',
     },
     url: {
       fontSize: '13px',

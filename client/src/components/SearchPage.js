@@ -55,7 +55,7 @@ const ButtonSection = styled.div`
   button {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
-    border-radius: 4px;
+    border-radius: 1em;
     color: #3c4043;
     font-family: Roboto, arial, sans-serif;
     font-size: 14px;
@@ -113,13 +113,23 @@ const SuggestionsList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 40%;
+  border: 1px solid #ddd;
+  border-top: none;
+  background-color: #fff;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 54%;
+  border-radius: 0 0 0.6em 0.6em;
 `;
 
 const SuggestionItem = styled.li`
   padding: 8px;
   cursor: pointer;
-  border-bottom: 1px solid #ddd;
-
+  border-top: 1px solid #ddd;
+  text-align: left;
   &:hover {
     background-color: #f2f2f2;
   }
@@ -142,7 +152,7 @@ const SearchPage = () => {
     return `${process.env.PUBLIC_URL}/${searchEngine.toLowerCase()}logo2.png`;
   };
 
-  const manuallyDefinedSuggestions = ['apple', 'animal', 'ants', 'appreciate', 'banana', 'cherry', 'date'];
+  const manuallyDefinedSuggestions = ['Is Hamas a threat to US', 'Is there a Texas Civil War', 'Is the earth flat',"Ian Romero", 'Is the earth round',"Is the earth good","Is the earth normal","Is the earth flattering","Is the earth flat controversy","Is the earth flat debate","Is the earth flat funny moments", 'Is the earth a cube', 'Is the earth a sphere', 'Is the earth a pyramid', "Google parent company Alphabet acquires Apple", "Istanbul faces glooming economic depression", "Is Hamilton a found father", "Israel Palestine Conflict", "Israel 1948", "Israel US relations", "Israel Palestinian War", "Israel Poverty", "Israel Palestinian Map", "Israel Palestine Relations", "Israel Palestine Controversy", "Israel Palestine Complications"];
 
   const handleInputChange = (event) => {
     const query = event.target.value.trim();
@@ -197,9 +207,9 @@ const SearchPage = () => {
             />
 
             <SuggestionsList>
-              {suggestions.map((suggestion, index) => (
+              {suggestions.slice(0,4).map((suggestion, index) => (
                 <SuggestionItem key={index} onClick={() => handleSuggestionClick(suggestion)}>
-                  {suggestion}
+                  {suggestion.toLowerCase()}
                 </SuggestionItem>
               ))}
             </SuggestionsList>
