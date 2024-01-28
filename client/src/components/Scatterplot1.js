@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
+import './style.css'
 
 const Scatterplot1 = () => {
   const svgRef = useRef();
@@ -68,9 +69,11 @@ const Scatterplot1 = () => {
   return (
     <div style={{ padding: '20px' }}>
       <div style={{ marginBottom: '20px' }}>
+        <div style={{ marginTop: '20px', fontFamily: 'Neue Haas Grotesk, sans-serif' }}>
         <p>
           In the scatterplot below, we visualize data points representing individuals or articles based on normalized correlation values (represented on the x and y axes). The red cluster in the top right corner indicates a minority of people or articles that share common characteristics or traits. On the other hand, the orange cluster in the middle represents an overwhelming majority with different characteristics.
         </p>
+        </div>
       </div>
       <svg
         ref={svgRef}
@@ -78,7 +81,7 @@ const Scatterplot1 = () => {
         height="300"
         style={{ border: '1px solid #ccc', margin: '0 auto', display: 'block' }}
       />
-      <div style={{ marginTop: '20px' }}>
+      <div style={{ marginTop: '20px', fontFamily: 'Neue Haas Grotesk, sans-serif', fontSize:"15" }}>
         <p>
           Interestingly, a significant number of data points fall outside these clusters, suggesting diversity or variation in the dataset. Some articles or individuals do not align with either group, indicating a lack of a clear direction or pattern.
         </p>

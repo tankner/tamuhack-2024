@@ -18,6 +18,11 @@ const LogoSection = styled.div`
     width: 400px;
     height: 92px;
     margin-top: auto;
+    transition: 0.5s;
+  }
+  img:hover {
+    scale: 1.1;
+    transition: 0.5s;
   }
 `;
 
@@ -106,6 +111,7 @@ display: flex;
 cursor: pointer;
 align-items: center;
 border: 0;
+
 
 `;
 

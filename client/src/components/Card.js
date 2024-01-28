@@ -18,10 +18,10 @@ const Card = ({ title, content }) => {
     
   return (
     <Accordion defaultExpanded={title==="Other results"}>
-        <AccordionSummary id="panel-header" aria-controls="panel-content" style={{ fontFamily: 'Roboto, sans-serif'} }>
+        <AccordionSummary id="panel-header" aria-controls="panel-content" style={{ fontFamily: 'Neue Haas Grotesk, sans-serif'} }>
             {title}
         </AccordionSummary>
-        <AccordionDetails style={{ fontFamily: 'Roboto, sans-serif' }}>
+        <AccordionDetails style={{  fontFamily: 'Neue Haas Grotesk, sans-serif' }}>
             {searchResults}
         </AccordionDetails>
     </Accordion>

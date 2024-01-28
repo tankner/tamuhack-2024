@@ -1,9 +1,43 @@
 /* styles.css */
 
+/* Assuming "client/public/fonts/" is the correct path to your font files */
+
+@font-face {
+  font-family: "Neue Haas Grotesk";
+  font-style: normal;
+  font-weight: 400; /* Assuming Regular weight is Roman */
+  src: url("../../client/public/fonts/NeueHaasDisplayRoman.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../client/public/fonts/NeueHaasDisplayRomanItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk";
+  font-style: normal;
+  font-weight: 700; /* Assuming Bold weight is Bold */
+  src: url("../../client/public/fonts/NeueHaasDisplayBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../../client/public/fonts/NeueHaasDisplayBoldItalic.ttf") format("truetype");
+}
+
+body {
+  font-family: "Neue Haas Grotesk", sans-serif;
+}
+
 .garamond {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Make sure the section takes the full height of the viewport */
+  height: 100vh;
 }
 
 .header {
@@ -11,7 +45,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  width: 100%; /* Ensure the header takes the full width */
+  width: 100%;
   padding: 10px;
 }
 
@@ -21,9 +55,9 @@
 
 .pa2 {
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  flex: 1; /* Take remaining vertical space */
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 .navy {
@@ -37,12 +71,12 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%; /* Position below the settings button */
-  right: 0; /* Align to the right */
+  top: 100%;
+  right: 0;
   background-color: #f9f9f9;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  z-index: 1; /* Ensure it's above other content */
+  z-index: 1;
 }
 
 .settings-button:hover .dropdown-menu {
@@ -50,18 +84,18 @@
 }
 
 img {
-  position: absolute; /* Position the image absolutely */
-  bottom: 50%; /* Move the image to the center vertically */
-  left: 50%; /* Center the image horizontally */
-  transform: translate(-50%, -50%); /* Adjust for centering */
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .parent-container {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  height: 100%; /* Take full height of parent (.garamond) */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 /* SearchPage.js */
@@ -75,7 +109,7 @@ img {
   cursor: pointer;
   overflow: hidden;
   transition: height 0.3s;
-  height: 50px; /* Initial height */
+  height: 50px;
 }
 
 .card:hover {
@@ -83,5 +117,5 @@ img {
 }
 
 .expanded {
-  height: 150px; /* Adjust the desired expanded height */
+  height: 150px;
 }
