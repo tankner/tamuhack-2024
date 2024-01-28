@@ -121,7 +121,7 @@ const SuggestionsList = styled.ul`
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
-  top: 54%;
+  top: 41%;
   border-radius: 0 0 0.6em 0.6em;
 `;
 
