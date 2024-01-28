@@ -1,6 +1,6 @@
 // SearchPage.js
 
-import React, { useState } from 'react';
+import React, { useState , useRef} from 'react';
 import SettingsButton from './SettingsButton';
 import '../styles.css';
 
@@ -9,6 +9,7 @@ function SearchPage() {
   const handleSearchEngineChange = (newSearchEngine) => {
     setSearchEngine(newSearchEngine);
   };
+  let searchTerm = useRef();
 
   const getLogoPath = (searchEngine) => {
     // Assuming logos are in the public directory
@@ -28,13 +29,14 @@ function SearchPage() {
         <img src={getLogoPath(searchEngine)} alt={`${searchEngine} Logo`}/>
         <div className="pa2">
           <input
+            ref = {searchTerm}
             className="pa3 bb br3 grow b--none bg-lightest-blue ma3"
             type="search"
             placeholder="Search"
             onKeyDown={(e) => {
               if(e.key === 'Enter') {
                 // placeholder
-                window.location.href = `https://www.google.com`;
+                window.location.href = `searchresults?searchTerm=${searchTerm.current.value}`;
               }
             }}
           />
