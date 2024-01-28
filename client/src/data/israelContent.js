@@ -46,9 +46,9 @@ export const c22 =  [
         "url": "https://theconversation.com/gaza-war-a-better-understanding-of-the-violence-on-both-sides-might-give-us-a-chance-at-a-solution-216855"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "10 questions about the armed conflict between Israel and ...",
+        "snippet": "Oct 19, 2023 — No matter how bad Hamas' crimes are, that is no justification for Israel to violate the law of war itself. 3) Do Israel and Hamas both have ...",
+        "url": "https://www.uva.nl/en/shared-content/faculteiten/en/faculteit-der-rechtsgeleerdheid/news/2023/10/questions-about-the-armed-conflict-between-israel-and-hamas.html"
     },
     {
         "title": "",
@@ -129,9 +129,9 @@ export const e2 = [
         "url": "https://www.bu.edu/articles/2023/israel-hamas-war-misinformation/"
     }, 
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Don't believe everything you see and hear about Israel and ...",
+        "snippet": "Oct 18, 2023 — When war goes online, the churn of good and bad information is supercharged by the stakes. ... For example, Hamas and Israel have traded blame ...",
+        "url": "https://www.vox.com/technology/2023/10/12/23913472/misinformation-israel-hamas-war-social-media-literacy-palestine"
     }, 
     {
         "title": "",
