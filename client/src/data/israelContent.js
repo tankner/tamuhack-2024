@@ -1,5 +1,5 @@
 // who is the bad hamas or israel
-export const h11 = "Neither is to blame."
+export const h11 = "Neither is to blame (53 Articles)"
 export const c11 = [
     {
         "title": "Who are the bad guys, Israel or the Hamas? : r/AskReddit",
@@ -38,7 +38,7 @@ export const c11 = [
     },
 ]
 
-export const h22 = "Hamas."
+export const h22 = "Hamas (34 Articles)"
 export const c22 =  [
      {
         "title": "Gaza war: a better understanding of the violence on both ...",
@@ -73,7 +73,7 @@ export const c22 =  [
 ]
 
 
-export const h33 = "Israel."
+export const h33 = "Israel (13 Articles)"
 export const c33 = [
     {
         "title": "Gaza: Why the War Won’t End",
