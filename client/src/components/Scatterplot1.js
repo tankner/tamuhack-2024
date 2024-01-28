@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 
-const Scatterplot = () => {
+// Is the earth flat
+
+const Scatterplot1 = () => {
   const svgRef = useRef();
 
   useEffect(() => {
@@ -11,21 +13,21 @@ const Scatterplot = () => {
 
     const svg = d3.select(svgRef.current);
 
-    // Generate 10 random points
-    const data = Array.from({ length: 10 }, () => ({
-      x: Math.random() * (width - margin.left - margin.right),
-      y: Math.random() * (height - margin.top - margin.bottom),
+    // Generate 50 points with two clusters and some outliers
+    const data = Array.from({ length: 50 }, (_, index) => ({
+      x: index < 10 || (index >= 30 && index < 40) ? Math.random() * 0.5 : Math.random() * 0.5 + 0.5,
+      y: index < 20 ? Math.random() * 0.5 : Math.random() * 0.5 + 0.5,
     }));
 
     // Create scales
     const xScale = d3
       .scaleLinear()
-      .domain([0, d3.max(data, d => d.x)])
+      .domain([0, 1])
       .range([margin.left, width - margin.right]);
 
     const yScale = d3
       .scaleLinear()
-      .domain([0, d3.max(data, d => d.y)])
+      .domain([0, 1])
       .range([height - margin.bottom, margin.top]);
 
     // Draw circles for each data point
@@ -59,4 +61,4 @@ const Scatterplot = () => {
   );
 };
 
-export default Scatterplot;
+export default Scatterplot1;
