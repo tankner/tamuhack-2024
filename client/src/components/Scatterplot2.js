@@ -75,9 +75,11 @@ const Scatterplot2 = () => {
   return (
     <div style={{ padding: '20px' }}>
       <div style={{ marginBottom: '20px' }}>
+      <div style={{ marginTop: '20px', fontFamily: 'Neue Haas Grotesk, sans-serif' }}>
         <p>
           In the scatterplot below, we visualize data points representing opinions on the Hamas-Israel conflict. Three loosely correlated groups can be observed, suggesting diverse perspectives. The red group in the top right may represent a subset with a specific viewpoint, the black group in the middle reflects another perspective, and the orange group represents additional opinions.
         </p>
+        </div>
       </div>
       <svg
         ref={svgRef}
@@ -85,7 +87,7 @@ const Scatterplot2 = () => {
         height="300"
         style={{ border: '1px solid #ccc', margin: '0 auto', display: 'block' }}
       />
-      <div style={{ marginTop: '20px' }}>
+      <div style={{ marginTop: '20px', fontFamily: 'Neue Haas Grotesk, sans-serif' }}>
         <p>
           It's noteworthy that some data points fall outside these groups, indicating outliers or individuals with unique opinions. The scatterplot illustrates the lack of a strong united opinion on the Hamas-Israel conflict, highlighting the diversity of perspectives within the dataset.
         </p>
