@@ -31,7 +31,7 @@ function SettingsButton({ searchEngine, onSearchEngineChange }) {
           aria-controls="dropdown-menu"
           aria-haspopup="true"
         >
-          Settings
+          Change Engine
         </Button>
         <Menu
           id="dropdown-menu"
