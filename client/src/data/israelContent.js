@@ -111,9 +111,9 @@ export const c33 = [
         "url": "https://www.cnbc.com/2023/12/12/israel-gaza-war-can-hamas-actually-be-eliminated-experts-weigh-in.html"
     },
     {
-        "title": "",
-        "snippet": "",
-        "url": ""
+        "title": "Is Hamas Evil? Reflections In the Wake of the 10/7 Carnage",
+        "snippet": "President Biden proclaimed that Hamas is “pure evil.” He is wrong. Like pure righteousness, or omnibenevolence, “pure evil”—the uppercase Evil— is a ...",
+        "url": "https://www.international.ucla.edu/israel/currents/article/272993"
     }, 
 ]
 
