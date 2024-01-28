@@ -133,7 +133,13 @@ const SearchPage = () => {
         />
       </LogoSection>
       <SearchSection>
-        <Form action='/' method='GET' role='search'>
+        <Form action='/' method='GET' role='search'
+          onSubmit={(e) => {
+            e.preventDefault();
+            searchTerm = e.target[0].value;
+            window.location.href = `searchresults?search-term=${searchTerm}&search-engine=${searchEngine}`;
+          }}
+        >
           <Search>
             <SearchIcon>
               <svg
@@ -144,11 +150,7 @@ const SearchPage = () => {
                 <path d='M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' />
               </svg>
             </SearchIcon>
-            <SearchInput type='text'>
-              onKeyDown={(e) => {
-                if (e.key === 'Enter') window.location.href = `https://www.${searchEngine.toLowerCase()}.com/search?q=${searchTerm.current.value}`;
-              }}
-            </SearchInput> 
+            <SearchInput/>
             <EngineIcon>
               <img
                 style={{ width: 20, height: 20 }} src={getLogoPath(searchEngine)} alt={`${searchEngine} Logo`}
