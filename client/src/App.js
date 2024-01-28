@@ -12,11 +12,7 @@ function App() {
   }, []);
   if (loading){
     return (
-      <Router>
-        <Routes>
-          <Route path="/loading" element={<Loading/>} />
-        </Routes>
-      </Router>
+      <Loading/>
     );
   }
   return (
