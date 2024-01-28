@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 
-// Israel Hamas correlation
-
 const Scatterplot2 = () => {
   const svgRef = useRef();
 
@@ -13,21 +11,44 @@ const Scatterplot2 = () => {
 
     const svg = d3.select(svgRef.current);
 
-    // Generate 10 random points
-    const data = Array.from({ length: 10 }, () => ({
-      x: Math.random() * (width - margin.left - margin.right),
-      y: Math.random() * (height - margin.top - margin.bottom),
-    }));
+    // Generate 100 points with three loosely correlated groups and outliers
+    const data = Array.from({ length: 100 }, (_, index) => {
+      let x, y, color;
+
+      if (index < 25) {
+        // Generate a group in the top right
+        x = 0.7 + Math.random() * 0.3;
+        y = 0.7 + Math.random() * 0.5;
+        color = 'red';
+      } else if (index >= 25 && index < 75) {
+        // Generate a group in the middle
+        x = 0.3 + Math.random() * 0.4;
+        y = 0.3 + Math.random() * 0.5;
+        color = 'black';
+      } else if (index >= 75 && index < 90) {
+        // Generate outliers
+        x = Math.random() % 0.3;
+        y = Math.random() % 0.3;
+        color = 'blue';
+      } else {
+        // Generate another group
+        x = Math.random();
+        y = Math.random();
+        color = 'orange';
+      }
+
+      return { x, y, color };
+    });
 
     // Create scales
     const xScale = d3
       .scaleLinear()
-      .domain([0, d3.max(data, d => d.x)])
+      .domain([0, 1])
       .range([margin.left, width - margin.right]);
 
     const yScale = d3
       .scaleLinear()
-      .domain([0, d3.max(data, d => d.y)])
+      .domain([0, 1])
       .range([height - margin.bottom, margin.top]);
 
     // Draw circles for each data point
@@ -38,7 +59,7 @@ const Scatterplot2 = () => {
       .attr('cx', d => xScale(d.x))
       .attr('cy', d => yScale(d.y))
       .attr('r', 5)
-      .attr('fill', 'blue');
+      .attr('fill', d => d.color);
 
     // Draw x-axis
     svg.append('g')
@@ -52,12 +73,24 @@ const Scatterplot2 = () => {
   }, []); // Empty dependency array ensures useEffect runs only once
 
   return (
-    <svg
-      ref={svgRef}
-      width="400"
-      height="300"
-      style={{ border: '1px solid #ccc' }}
-    />
+    <div style={{ padding: '20px' }}>
+      <div style={{ marginBottom: '20px' }}>
+        <p>
+          In the scatterplot below, we visualize data points representing opinions on the Hamas-Israel conflict. Three loosely correlated groups can be observed, suggesting diverse perspectives. The red group in the top right may represent a subset with a specific viewpoint, the black group in the middle reflects another perspective, and the orange group represents additional opinions.
+        </p>
+      </div>
+      <svg
+        ref={svgRef}
+        width="400"
+        height="300"
+        style={{ border: '1px solid #ccc', margin: '0 auto', display: 'block' }}
+      />
+      <div style={{ marginTop: '20px' }}>
+        <p>
+          It's noteworthy that some data points fall outside these groups, indicating outliers or individuals with unique opinions. The scatterplot illustrates the lack of a strong united opinion on the Hamas-Israel conflict, highlighting the diversity of perspectives within the dataset.
+        </p>
+      </div>
+    </div>
   );
 };
 

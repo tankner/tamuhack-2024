@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 
-// Is the earth flat
-
 const Scatterplot1 = () => {
   const svgRef = useRef();
 
@@ -13,11 +11,27 @@ const Scatterplot1 = () => {
 
     const svg = d3.select(svgRef.current);
 
-    // Generate 50 points with two clusters and some outliers
-    const data = Array.from({ length: 50 }, (_, index) => ({
-      x: index < 10 || (index >= 30 && index < 40) ? Math.random() * 0.5 : Math.random() * 0.5 + 0.5,
-      y: index < 20 ? Math.random() * 0.5 : Math.random() * 0.5 + 0.5,
-    }));
+    // Generate 100 points with clusters and outliers
+    const data = Array.from({ length: 100 }, (_, index) => {
+      let x, y, color;
+
+      if (index < 3) {
+        // Generate tight cluster on the top right
+        x = 0.7 + Math.random() * 0.05;
+        y = 0.7 + Math.random() * 0.05;
+        color = 'red';
+      } else if (index < 90) {
+        x = Math.random() * (0.4 * Math.random());
+        y = Math.random() * (0.4 * Math.random());
+        color = 'orange';
+      } else {
+        x = Math.random();
+        y = Math.random();
+        color = 'black';
+      }
+
+      return { x, y, color };
+    });
 
     // Create scales
     const xScale = d3
@@ -38,7 +52,7 @@ const Scatterplot1 = () => {
       .attr('cx', d => xScale(d.x))
       .attr('cy', d => yScale(d.y))
       .attr('r', 5)
-      .attr('fill', 'blue');
+      .attr('fill', d => d.color);
 
     // Draw x-axis
     svg.append('g')
@@ -52,12 +66,24 @@ const Scatterplot1 = () => {
   }, []); // Empty dependency array ensures useEffect runs only once
 
   return (
-    <svg
-      ref={svgRef}
-      width="400"
-      height="300"
-      style={{ border: '1px solid #ccc' }}
-    />
+    <div style={{ padding: '20px' }}>
+      <div style={{ marginBottom: '20px' }}>
+        <p>
+          In the scatterplot below, we visualize data points representing individuals or articles based on normalized correlation values (represented on the x and y axes). The red cluster in the top right corner indicates a minority of people or articles that share common characteristics or traits. On the other hand, the orange cluster in the middle represents an overwhelming majority with different characteristics.
+        </p>
+      </div>
+      <svg
+        ref={svgRef}
+        width="400"
+        height="300"
+        style={{ border: '1px solid #ccc', margin: '0 auto', display: 'block' }}
+      />
+      <div style={{ marginTop: '20px' }}>
+        <p>
+          Interestingly, a significant number of data points fall outside these clusters, suggesting diversity or variation in the dataset. Some articles or individuals do not align with either group, indicating a lack of a clear direction or pattern.
+        </p>
+      </div>
+    </div>
   );
 };
 
