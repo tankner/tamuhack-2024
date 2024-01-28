@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-const app = express();
-
+router.route('/').get((req, res) => {
+    res.send('Hello World');
+});
