@@ -5,6 +5,7 @@ import {h1, c1, h2, c2, e1} from "../data/earthFlatContent";
 import {h11, c11, h22, c22, h33, c33, e2} from "../data/israelContent";
 import GoogleSearchHeader from './GoogleSearchHeader';
 import { useSearchParams } from 'react-router-dom';
+import Scatterplot from './Scatterplot';
 import './style.css'
 
 function SearchResult() {
@@ -22,7 +23,9 @@ function SearchResult() {
           ));
         return (
             <>
+            
             <GoogleSearchHeader/>
+            <Scatterplot/>
             <Card title={h1} content={c1}/>
             <Card title={h2} content={c2}/>
             {searchResults}
@@ -41,6 +44,7 @@ function SearchResult() {
         return (
             <>
             <GoogleSearchHeader/>
+            <Scatterplot/>
             <Card title={h11} content={c11}/>
             <Card title={h22} content={c22}/>
             <Card title={h33} content={c33}/>
