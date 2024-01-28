@@ -109,11 +109,29 @@ border: 0;
 
 `;
 
+const SuggestionsList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
+
+const SuggestionItem = styled.li`
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
+`;
+
 
 
 const SearchPage = () => {
-
   const [searchEngine, setSearchEngine] = useState('Google');
+  const [suggestions, setSuggestions] = useState([]);
+  const searchTermRef = useRef();
+
   const handleSearchEngineChange = (newSearchEngine) => {
     console.log("New Search Engine: ", newSearchEngine);
     setSearchEngine(newSearchEngine);
@@ -121,8 +139,28 @@ const SearchPage = () => {
   let searchTerm = useRef();
 
   const getLogoPath = (searchEngine) => {
-    // Assuming logos are in the public directory
     return `${process.env.PUBLIC_URL}/${searchEngine.toLowerCase()}logo2.png`;
+  };
+
+  const manuallyDefinedSuggestions = ['apple', 'animal', 'ants', 'appreciate', 'banana', 'cherry', 'date'];
+
+  const handleInputChange = (event) => {
+    const query = event.target.value.trim();
+
+    // Filter suggestions based on the user's input (starts with the input sequence)
+    const filteredSuggestions = manuallyDefinedSuggestions.filter(suggestion =>
+      suggestion.toLowerCase().startsWith(query.toLowerCase())
+    );
+    if (query === "") {
+      setSuggestions([]);
+    } else {
+      setSuggestions(filteredSuggestions);
+    }
+  };
+
+  const handleSuggestionClick = (suggestion) => {
+    searchTermRef.current.value = suggestion;
+    setSuggestions([]); // Clear suggestions after selecting one
   };
 
   return (
@@ -152,7 +190,20 @@ const SearchPage = () => {
                 <path d='M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' />
               </svg>
             </SearchIcon>
-            <SearchInput/>
+            <SearchInput
+              ref={searchTermRef}
+              onChange={handleInputChange}
+              placeholder="Search..."
+            />
+
+            <SuggestionsList>
+              {suggestions.map((suggestion, index) => (
+                <SuggestionItem key={index} onClick={() => handleSuggestionClick(suggestion)}>
+                  {suggestion}
+                </SuggestionItem>
+              ))}
+            </SuggestionsList>
+
             <EngineIcon>
               <img
                 style={{ width: 20, height: 20 }} src={getLogoPath(searchEngine)} alt={`${searchEngine} Logo`}
